@@ -5,7 +5,7 @@ location: "Omaha, NE"
 email: "craigreedwilliams@gmail.com"
 baseurl: ""
 
-url: "https://craigreedwilliams.github.io/" # replace by your site's url
+url: "https://craigreedwilliams.github.io" # replace by your site's url
 linkedin_username: your-name
 github_username:  craigreedwilliams
 author: "Craig Reed Williams"
