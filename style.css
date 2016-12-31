@@ -209,7 +209,7 @@ a:active {
 .welcome {
   padding: 38vh 10% 10vh 10%;
   color: #fff;
-  background-color: #F0BE21;
+  background-color: #FF6633;
   background-image: url("");
   background-repeat: no-repeat;
   background-position: center center;
@@ -235,7 +235,7 @@ a:active {
 
 .about {
   padding: 25vh 10%;
-  background-color: #2e2e2e;
+  background-color: #FF9933;
   background-image: url("");
   background-repeat: no-repeat;
   background-position: center center;
@@ -243,7 +243,7 @@ a:active {
 
 .work {
   padding: 5vh 10%;
-  background-color: #1e1e1e;
+  background-color: #FFCC33;
   background-image: url("");
   background-repeat: no-repeat;
   background-position: center center;
@@ -251,7 +251,7 @@ a:active {
 
 .contact {
   padding: 25vh 10%;
-  background-color: #2e2e2e;
+  background-color: #FF6600;
   background-image: url("");
   background-repeat: no-repeat;
   background-position: center center;
@@ -260,7 +260,7 @@ a:active {
 
 .more {
   padding: 25vh 10%;
-  background-color: #1e1e1e;
+  background-color: #FF9900;
   background-image: url("");
   background-repeat: no-repeat;
   background-position: center center;
