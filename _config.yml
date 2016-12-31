@@ -1,4 +1,4 @@
-title: "Your Name"
+title: "Craig Reed Williams"
 description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
 about: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
 location: "Your Region, Country"
@@ -7,8 +7,8 @@ baseurl: "/material-theme"
 
 url: "https://craigreedwilliams.github.io/" # replace by your site's url
 twitter_username: your-name
-github_username:  lukas-h
-author: "Your Name"
+github_username:  craigreedwilliams
+author: "Craig Reed Williams"
 
 # google analytics tracking code, please change the value
 g_analytics: ""
