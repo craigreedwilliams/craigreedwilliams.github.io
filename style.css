@@ -1,0 +1,433 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background: #F4A51D;
+  /* Safari */
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #F4A51D;
+  /* Firefox */
+}
+
+
+/*ANIMATIONS*/
+
+@keyframes startUp {
+  from {
+    padding: 0vh 10% 10vh 10%;
+    opacity: 0;
+  }
+  to {
+    padding: 38vh 10% 10vh 10%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes startUp {
+  from {
+    padding: 0vh 10% 10vh 10%;
+    opacity: 0;
+  }
+  to {
+    padding: 38vh 10% 10vh 10%;
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+/*BASICS*/
+
+h1 {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 100%;
+  color: #fff;
+}
+
+h2 {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 100%;
+  color: #fff;
+}
+
+em {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  border: 0px;
+  padding: 0px;
+}
+
+
+/*NAVIGATION*/
+
+nav {
+  width: 100%;
+  margin: 0px;
+  position: fixed;
+  float: right;
+  font-family: 'Lato', sans-serif;
+  font-style: none;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #fff;
+  opacity: 0;
+  -webkit-animation: fade 1s ease-in-out 7s;
+  animation: fade 1s ease-in-out 7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5px 10% 5px 10%;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+a:link,
+a:visited {
+  display: block;
+  width: auto;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+}
+
+a:hover,
+a:active {
+  background-color: #F4A51D;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+
+/*PAGE LAYOUT*/
+
+.page-container {
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+.sectionFull {
+  margin: 0;
+  min-height: 100vh;
+  height: auto;
+}
+
+.section {
+  margin: 0;
+  height: auto;
+}
+
+
+/*PAGES*/
+
+.welcome {
+  padding: 38vh 10% 10vh 10%;
+  color: #fff;
+  background-color: #F0BE21;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  background-attachment: fixed;
+  text-align: center;
+  -webkit-animation: startUp 5s ease-in-out;
+  animation: startUp 5s ease-in-out;
+}
+
+.welcome h1 {
+  -webkit-animation: fade 5s ease-in-out;
+  animation: fade 5s ease-in-out;
+}
+
+.welcome p {
+  opacity: 0;
+  -webkit-animation: fade 1s ease-in-out 5s;
+  animation: fade 1s ease-in-out 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.about {
+  padding: 25vh 10%;
+  background-color: #2e2e2e;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.work {
+  padding: 5vh 10%;
+  background-color: #1e1e1e;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contact {
+  padding: 25vh 10%;
+  background-color: #2e2e2e;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("");
+}
+
+.more {
+  padding: 25vh 10%;
+  background-color: #1e1e1e;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/*DECORATION*/
+
+.logo {
+  display: block;
+  float: left;
+  padding: 0px;
+  margin: 9px 0px 0px 10%;
+}
+
+.line {
+  width: 10%;
+  min-width: 40px;
+  margin: 12px 5px;
+  border-top: 3px solid #fff;
+}
+
+.portInfo {
+  opacity: 0;
+  padding: 25px;
+  min-height: 300px;
+  background-color: #F4A51D;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.portInfo:hover {
+  opacity: .95;
+}
+
+.portInfo h2 {
+  font-size: 40px;
+}
+
+
+/*GRIDS*/
+
+.grid {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0px 20px 5px;
+  margin: 0px auto;
+}
+
+.col {
+  float: left;
+  padding-right: 0px;
+}
+
+.gridPort {
+  overflow: hidden;
+  width: 100%;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.colPort {
+  float: left;
+  padding-right: 0px;
+}
+
+.sixtySix {
+  width: 66.66%;
+}
+
+.thirtyThree {
+  width: 33.33%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.twentyFive {
+  width: 25%;
+}
+
+.half {
+  width: 50%;
+}
+
+.seventyFive {
+  width: 75%;
+}
+
+.ten {
+  width: 10%;
+}
+
+.twenty {
+  width: 20%;
+}
+
+.forty {
+  width: 40%;
+}
+
+.fifty {
+  width: 50%;
+}
+
+.sixty {
+  width: 60%;
+}
+
+.ninety {
+  width: 90%;
+}
+
+
+/*MODULES*/
+
+.module {
+  padding: 20px;
+}
+
+.portmodule {
+  padding: 0px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: background-position .6s;
+  transition: background-position .6s;
+  overflow: hidden;
+}
+
+.portmodule:hover {
+  background-position: center top;
+}
+
+
+/*RECENT*/
+
+.rec1 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/1.png");
+}
+
+.rec2 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/2.png");
+}
+
+.rec3 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/3.png");
+}
+
+.rec4 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/4.png");
+}
+
+.rec5 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/5.png");
+}
+
+.rec6 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/6.png");
+}
+
+.rec7 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/7.png");
+}
+
+.rec8 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/8.png");
+}
