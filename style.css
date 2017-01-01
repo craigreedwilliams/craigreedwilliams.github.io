@@ -1,0 +1,3344 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background: #F4A51D;
+  /* Safari */
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #F4A51D;
+  /* Firefox */
+}
+
+
+/*ANIMATIONS*/
+
+@keyframes startUp {
+  from {
+    padding: 0vh 10% 10vh 10%;
+    opacity: 0;
+  }
+  to {
+    padding: 38vh 10% 10vh 10%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes startUp {
+  from {
+    padding: 0vh 10% 10vh 10%;
+    opacity: 0;
+  }
+  to {
+    padding: 38vh 10% 10vh 10%;
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+/*BASICS*/
+
+h1 {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 100%;
+  color: #fff;
+}
+
+h2 {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 100%;
+  color: #fff;
+}
+
+em {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  border: 0px;
+  padding: 0px;
+}
+
+
+/*NAVIGATION*/
+
+nav {
+  width: 100%;
+  margin: 0px;
+  position: fixed;
+  float: right;
+  font-family: 'Lato', sans-serif;
+  font-style: none;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #fff;
+  opacity: 0;
+  -webkit-animation: fade 1s ease-in-out 7s;
+  animation: fade 1s ease-in-out 7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5px 10% 5px 10%;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+a:link,
+a:visited {
+  display: block;
+  width: auto;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+}
+
+a:hover,
+a:active {
+  background-color: #F4A51D;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+
+/*PAGE LAYOUT*/
+
+.page-container {
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+.sectionFull {
+  margin: 0;
+  min-height: 100vh;
+  height: auto;
+}
+
+.section {
+  margin: 0;
+  height: auto;
+}
+
+
+/*PAGES*/
+
+.welcome {
+  padding: 38vh 10% 10vh 10%;
+  color: #fff;
+  background-color: #FF6633;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  background-attachment: fixed;
+  text-align: center;
+  -webkit-animation: startUp 5s ease-in-out;
+  animation: startUp 5s ease-in-out;
+}
+
+.welcome h1 {
+  -webkit-animation: fade 5s ease-in-out;
+  animation: fade 5s ease-in-out;
+}
+
+.welcome p {
+  opacity: 0;
+  -webkit-animation: fade 1s ease-in-out 5s;
+  animation: fade 1s ease-in-out 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.about {
+  padding: 25vh 10%;
+  background-color: #FF9933;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pictures {
+  padding: 25vh 10%;
+  background-color: #FFCC33;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.post {
+  padding: 25vh 10%;
+  background-color: #FF6600;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("");
+}
+
+.contact {
+  padding: 25vh 10%;
+  background-color: #FF9900;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/*DECORATION*/
+
+.logo {
+  display: block;
+  float: left;
+  padding: 0px;
+  margin: 9px 0px 0px 10%;
+}
+
+.line {
+  width: 10%;
+  min-width: 40px;
+  margin: 12px 5px;
+  border-top: 3px solid #fff;
+}
+
+.portInfo {
+  opacity: 0;
+  padding: 25px;
+  min-height: 300px;
+  background-color: #F4A51D;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.portInfo:hover {
+  opacity: .95;
+}
+
+.portInfo h2 {
+  font-size: 40px;
+}
+
+
+/*GRIDS*/
+
+.grid {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0px 20px 5px;
+  margin: 0px auto;
+}
+
+.col {
+  float: left;
+  padding-right: 0px;
+}
+
+.gridPort {
+  overflow: hidden;
+  width: 100%;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.colPort {
+  float: left;
+  padding-right: 0px;
+}
+
+.sixtySix {
+  width: 66.66%;
+}
+
+.thirtyThree {
+  width: 33.33%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.twentyFive {
+  width: 25%;
+}
+
+.half {
+  width: 50%;
+}
+
+.seventyFive {
+  width: 75%;
+}
+
+.ten {
+  width: 10%;
+}
+
+.twenty {
+  width: 20%;
+}
+
+.forty {
+  width: 40%;
+}
+
+.fifty {
+  width: 50%;
+}
+
+.sixty {
+  width: 60%;
+}
+
+.ninety {
+  width: 90%;
+}
+
+
+/*MODULES*/
+
+.module {
+  padding: 20px;
+}
+
+.portmodule {
+  padding: 0px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: background-position .6s;
+  transition: background-position .6s;
+  overflow: hidden;
+}
+
+.portmodule:hover {
+  background-position: center top;
+}
+
+
+/*RECENT*/
+
+.rec1 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/1.png");
+}
+
+.rec2 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/2.png");
+}
+
+.rec3 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/3.png");
+}
+
+.rec4 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/4.png");
+}
+
+.rec5 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/5.png");
+}
+
+.rec6 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/6.png");
+}
+
+.rec7 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/7.png");
+}
+
+.rec8 {
+  background-image: url("http://students.uwyo.edu/jchave13/recent/8.png");
+}
+
+/**/
+
+div.cell {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  margin: 1px;
+  border: solid 1px #ddd;
+}
+div.row:nth-child(1) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 112ms;
+  animation-duration: 30s;
+  animation-name: apop28;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 17841ms;
+  animation-duration: 30s;
+  animation-name: apop13;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 28625ms;
+  animation-duration: 30s;
+  animation-name: apop31;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 19293ms;
+  animation-duration: 30s;
+  animation-name: apop47;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 22226ms;
+  animation-duration: 30s;
+  animation-name: apop35;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 9007ms;
+  animation-duration: 30s;
+  animation-name: apop5;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 23538ms;
+  animation-duration: 30s;
+  animation-name: apop11;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 8814ms;
+  animation-duration: 30s;
+  animation-name: apop8;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 27246ms;
+  animation-duration: 30s;
+  animation-name: apop6;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(1) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 12189ms;
+  animation-duration: 30s;
+  animation-name: apop41;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 11033ms;
+  animation-duration: 30s;
+  animation-name: apop18;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 3856ms;
+  animation-duration: 30s;
+  animation-name: apop20;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 2303ms;
+  animation-duration: 30s;
+  animation-name: apop11;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 21752ms;
+  animation-duration: 30s;
+  animation-name: apop24;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 23926ms;
+  animation-duration: 30s;
+  animation-name: apop18;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 18206ms;
+  animation-duration: 30s;
+  animation-name: apop37;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 624ms;
+  animation-duration: 30s;
+  animation-name: apop37;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 7102ms;
+  animation-duration: 30s;
+  animation-name: apop32;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 11239ms;
+  animation-duration: 30s;
+  animation-name: apop41;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(2) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 22689ms;
+  animation-duration: 30s;
+  animation-name: apop4;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 14688ms;
+  animation-duration: 30s;
+  animation-name: apop20;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 24201ms;
+  animation-duration: 30s;
+  animation-name: apop34;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 4911ms;
+  animation-duration: 30s;
+  animation-name: apop32;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 20467ms;
+  animation-duration: 30s;
+  animation-name: apop17;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 19108ms;
+  animation-duration: 30s;
+  animation-name: apop50;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 19166ms;
+  animation-duration: 30s;
+  animation-name: apop28;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 1753ms;
+  animation-duration: 30s;
+  animation-name: apop43;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 17021ms;
+  animation-duration: 30s;
+  animation-name: apop44;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 8705ms;
+  animation-duration: 30s;
+  animation-name: apop29;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(3) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 14457ms;
+  animation-duration: 30s;
+  animation-name: apop30;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 17155ms;
+  animation-duration: 30s;
+  animation-name: apop43;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 16855ms;
+  animation-duration: 30s;
+  animation-name: apop37;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 18337ms;
+  animation-duration: 30s;
+  animation-name: apop27;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 12929ms;
+  animation-duration: 30s;
+  animation-name: apop26;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 10097ms;
+  animation-duration: 30s;
+  animation-name: apop6;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 190ms;
+  animation-duration: 30s;
+  animation-name: apop24;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 9555ms;
+  animation-duration: 30s;
+  animation-name: apop46;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 4196ms;
+  animation-duration: 30s;
+  animation-name: apop49;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 25262ms;
+  animation-duration: 30s;
+  animation-name: apop27;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(4) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 12842ms;
+  animation-duration: 30s;
+  animation-name: apop13;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 23402ms;
+  animation-duration: 30s;
+  animation-name: apop28;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 20307ms;
+  animation-duration: 30s;
+  animation-name: apop15;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 5336ms;
+  animation-duration: 30s;
+  animation-name: apop42;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 12859ms;
+  animation-duration: 30s;
+  animation-name: apop12;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 18490ms;
+  animation-duration: 30s;
+  animation-name: apop28;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 20810ms;
+  animation-duration: 30s;
+  animation-name: apop47;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 25657ms;
+  animation-duration: 30s;
+  animation-name: apop21;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 6029ms;
+  animation-duration: 30s;
+  animation-name: apop34;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 21659ms;
+  animation-duration: 30s;
+  animation-name: apop38;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(5) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 21144ms;
+  animation-duration: 30s;
+  animation-name: apop14;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 9829ms;
+  animation-duration: 30s;
+  animation-name: apop5;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 25479ms;
+  animation-duration: 30s;
+  animation-name: apop36;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 10645ms;
+  animation-duration: 30s;
+  animation-name: apop38;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 7448ms;
+  animation-duration: 30s;
+  animation-name: apop31;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 7392ms;
+  animation-duration: 30s;
+  animation-name: apop38;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 25704ms;
+  animation-duration: 30s;
+  animation-name: apop49;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 28491ms;
+  animation-duration: 30s;
+  animation-name: apop33;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 13881ms;
+  animation-duration: 30s;
+  animation-name: apop13;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 17474ms;
+  animation-duration: 30s;
+  animation-name: apop40;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(6) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 9008ms;
+  animation-duration: 30s;
+  animation-name: apop34;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 22247ms;
+  animation-duration: 30s;
+  animation-name: apop28;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 10020ms;
+  animation-duration: 30s;
+  animation-name: apop45;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 3627ms;
+  animation-duration: 30s;
+  animation-name: apop50;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 579ms;
+  animation-duration: 30s;
+  animation-name: apop15;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 15349ms;
+  animation-duration: 30s;
+  animation-name: apop36;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 2434ms;
+  animation-duration: 30s;
+  animation-name: apop14;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 29489ms;
+  animation-duration: 30s;
+  animation-name: apop39;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 16020ms;
+  animation-duration: 30s;
+  animation-name: apop9;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 7854ms;
+  animation-duration: 30s;
+  animation-name: apop25;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(7) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 23072ms;
+  animation-duration: 30s;
+  animation-name: apop49;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 11955ms;
+  animation-duration: 30s;
+  animation-name: apop24;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 23364ms;
+  animation-duration: 30s;
+  animation-name: apop39;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 2882ms;
+  animation-duration: 30s;
+  animation-name: apop31;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 15735ms;
+  animation-duration: 30s;
+  animation-name: apop23;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 2562ms;
+  animation-duration: 30s;
+  animation-name: apop12;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 16677ms;
+  animation-duration: 30s;
+  animation-name: apop27;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 20403ms;
+  animation-duration: 30s;
+  animation-name: apop4;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 5712ms;
+  animation-duration: 30s;
+  animation-name: apop46;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 1749ms;
+  animation-duration: 30s;
+  animation-name: apop10;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(8) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 4394ms;
+  animation-duration: 30s;
+  animation-name: apop45;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 11028ms;
+  animation-duration: 30s;
+  animation-name: apop17;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 27873ms;
+  animation-duration: 30s;
+  animation-name: apop18;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 5197ms;
+  animation-duration: 30s;
+  animation-name: apop25;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 15432ms;
+  animation-duration: 30s;
+  animation-name: apop29;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 8703ms;
+  animation-duration: 30s;
+  animation-name: apop34;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 23414ms;
+  animation-duration: 30s;
+  animation-name: apop41;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 16393ms;
+  animation-duration: 30s;
+  animation-name: apop21;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 838ms;
+  animation-duration: 30s;
+  animation-name: apop29;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 6311ms;
+  animation-duration: 30s;
+  animation-name: apop10;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(9) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 19095ms;
+  animation-duration: 30s;
+  animation-name: apop49;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(1) {
+  background: #fff;
+  animation-delay: 29639ms;
+  animation-duration: 30s;
+  animation-name: apop10;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(2) {
+  background: #fff;
+  animation-delay: 846ms;
+  animation-duration: 30s;
+  animation-name: apop38;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(3) {
+  background: #fff;
+  animation-delay: 16855ms;
+  animation-duration: 30s;
+  animation-name: apop49;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(4) {
+  background: #fff;
+  animation-delay: 16087ms;
+  animation-duration: 30s;
+  animation-name: apop34;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(5) {
+  background: #fff;
+  animation-delay: 24102ms;
+  animation-duration: 30s;
+  animation-name: apop2;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(6) {
+  background: #fff;
+  animation-delay: 17902ms;
+  animation-duration: 30s;
+  animation-name: apop49;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(7) {
+  background: #fff;
+  animation-delay: 5061ms;
+  animation-duration: 30s;
+  animation-name: apop48;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(8) {
+  background: #fff;
+  animation-delay: 8574ms;
+  animation-duration: 30s;
+  animation-name: apop23;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(9) {
+  background: #fff;
+  animation-delay: 22108ms;
+  animation-duration: 30s;
+  animation-name: apop43;
+  animation-iteration-count: infinite;
+}
+div.row:nth-child(10) div.cell:nth-child(10) {
+  background: #fff;
+  animation-delay: 10520ms;
+  animation-duration: 30s;
+  animation-name: apop20;
+  animation-iteration-count: infinite;
+}
+@-moz-keyframes apop1 {
+  0% {
+    background: #3b366d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop1 {
+  0% {
+    background: #3b366d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop1 {
+  0% {
+    background: #3b366d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop1 {
+  0% {
+    background: #3b366d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop2 {
+  0% {
+    background: #772cbf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop2 {
+  0% {
+    background: #772cbf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop2 {
+  0% {
+    background: #772cbf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop2 {
+  0% {
+    background: #772cbf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop3 {
+  0% {
+    background: #278517;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop3 {
+  0% {
+    background: #278517;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop3 {
+  0% {
+    background: #278517;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop3 {
+  0% {
+    background: #278517;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop4 {
+  0% {
+    background: #f77e07;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop4 {
+  0% {
+    background: #f77e07;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop4 {
+  0% {
+    background: #f77e07;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop4 {
+  0% {
+    background: #f77e07;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop5 {
+  0% {
+    background: #f22fe4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop5 {
+  0% {
+    background: #f22fe4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop5 {
+  0% {
+    background: #f22fe4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop5 {
+  0% {
+    background: #f22fe4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop6 {
+  0% {
+    background: #ea7bad;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop6 {
+  0% {
+    background: #ea7bad;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop6 {
+  0% {
+    background: #ea7bad;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop6 {
+  0% {
+    background: #ea7bad;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop7 {
+  0% {
+    background: #078d6e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop7 {
+  0% {
+    background: #078d6e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop7 {
+  0% {
+    background: #078d6e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop7 {
+  0% {
+    background: #078d6e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop8 {
+  0% {
+    background: #ab3f7b;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop8 {
+  0% {
+    background: #ab3f7b;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop8 {
+  0% {
+    background: #ab3f7b;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop8 {
+  0% {
+    background: #ab3f7b;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop9 {
+  0% {
+    background: #0c9e8f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop9 {
+  0% {
+    background: #0c9e8f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop9 {
+  0% {
+    background: #0c9e8f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop9 {
+  0% {
+    background: #0c9e8f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop10 {
+  0% {
+    background: #463ede;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop10 {
+  0% {
+    background: #463ede;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop10 {
+  0% {
+    background: #463ede;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop10 {
+  0% {
+    background: #463ede;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop11 {
+  0% {
+    background: #dc230a;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop11 {
+  0% {
+    background: #dc230a;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop11 {
+  0% {
+    background: #dc230a;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop11 {
+  0% {
+    background: #dc230a;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop12 {
+  0% {
+    background: #20ccf7;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop12 {
+  0% {
+    background: #20ccf7;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop12 {
+  0% {
+    background: #20ccf7;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop12 {
+  0% {
+    background: #20ccf7;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop13 {
+  0% {
+    background: #761976;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop13 {
+  0% {
+    background: #761976;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop13 {
+  0% {
+    background: #761976;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop13 {
+  0% {
+    background: #761976;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop14 {
+  0% {
+    background: #41e025;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop14 {
+  0% {
+    background: #41e025;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop14 {
+  0% {
+    background: #41e025;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop14 {
+  0% {
+    background: #41e025;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop15 {
+  0% {
+    background: #86594f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop15 {
+  0% {
+    background: #86594f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop15 {
+  0% {
+    background: #86594f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop15 {
+  0% {
+    background: #86594f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop16 {
+  0% {
+    background: #6bd04c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop16 {
+  0% {
+    background: #6bd04c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop16 {
+  0% {
+    background: #6bd04c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop16 {
+  0% {
+    background: #6bd04c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop17 {
+  0% {
+    background: #d75afb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop17 {
+  0% {
+    background: #d75afb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop17 {
+  0% {
+    background: #d75afb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop17 {
+  0% {
+    background: #d75afb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop18 {
+  0% {
+    background: #099fc4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop18 {
+  0% {
+    background: #099fc4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop18 {
+  0% {
+    background: #099fc4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop18 {
+  0% {
+    background: #099fc4;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop19 {
+  0% {
+    background: #e8b90d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop19 {
+  0% {
+    background: #e8b90d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop19 {
+  0% {
+    background: #e8b90d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop19 {
+  0% {
+    background: #e8b90d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop20 {
+  0% {
+    background: #18774d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop20 {
+  0% {
+    background: #18774d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop20 {
+  0% {
+    background: #18774d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop20 {
+  0% {
+    background: #18774d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop21 {
+  0% {
+    background: #84a43e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop21 {
+  0% {
+    background: #84a43e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop21 {
+  0% {
+    background: #84a43e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop21 {
+  0% {
+    background: #84a43e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop22 {
+  0% {
+    background: #2388e6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop22 {
+  0% {
+    background: #2388e6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop22 {
+  0% {
+    background: #2388e6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop22 {
+  0% {
+    background: #2388e6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop23 {
+  0% {
+    background: #fd8af2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop23 {
+  0% {
+    background: #fd8af2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop23 {
+  0% {
+    background: #fd8af2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop23 {
+  0% {
+    background: #fd8af2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop24 {
+  0% {
+    background: #499e98;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop24 {
+  0% {
+    background: #499e98;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop24 {
+  0% {
+    background: #499e98;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop24 {
+  0% {
+    background: #499e98;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop25 {
+  0% {
+    background: #25c395;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop25 {
+  0% {
+    background: #25c395;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop25 {
+  0% {
+    background: #25c395;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop25 {
+  0% {
+    background: #25c395;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop26 {
+  0% {
+    background: #3cd1ec;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop26 {
+  0% {
+    background: #3cd1ec;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop26 {
+  0% {
+    background: #3cd1ec;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop26 {
+  0% {
+    background: #3cd1ec;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop27 {
+  0% {
+    background: #97c3c2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop27 {
+  0% {
+    background: #97c3c2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop27 {
+  0% {
+    background: #97c3c2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop27 {
+  0% {
+    background: #97c3c2;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop28 {
+  0% {
+    background: #302142;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop28 {
+  0% {
+    background: #302142;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop28 {
+  0% {
+    background: #302142;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop28 {
+  0% {
+    background: #302142;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop29 {
+  0% {
+    background: #e9da49;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop29 {
+  0% {
+    background: #e9da49;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop29 {
+  0% {
+    background: #e9da49;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop29 {
+  0% {
+    background: #e9da49;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop30 {
+  0% {
+    background: #023748;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop30 {
+  0% {
+    background: #023748;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop30 {
+  0% {
+    background: #023748;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop30 {
+  0% {
+    background: #023748;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop31 {
+  0% {
+    background: #f5fdcf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop31 {
+  0% {
+    background: #f5fdcf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop31 {
+  0% {
+    background: #f5fdcf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop31 {
+  0% {
+    background: #f5fdcf;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop32 {
+  0% {
+    background: #6ce9e8;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop32 {
+  0% {
+    background: #6ce9e8;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop32 {
+  0% {
+    background: #6ce9e8;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop32 {
+  0% {
+    background: #6ce9e8;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop33 {
+  0% {
+    background: #f23464;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop33 {
+  0% {
+    background: #f23464;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop33 {
+  0% {
+    background: #f23464;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop33 {
+  0% {
+    background: #f23464;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop34 {
+  0% {
+    background: #da8187;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop34 {
+  0% {
+    background: #da8187;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop34 {
+  0% {
+    background: #da8187;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop34 {
+  0% {
+    background: #da8187;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop35 {
+  0% {
+    background: #4527d6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop35 {
+  0% {
+    background: #4527d6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop35 {
+  0% {
+    background: #4527d6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop35 {
+  0% {
+    background: #4527d6;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop36 {
+  0% {
+    background: #9a62d1;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop36 {
+  0% {
+    background: #9a62d1;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop36 {
+  0% {
+    background: #9a62d1;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop36 {
+  0% {
+    background: #9a62d1;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop37 {
+  0% {
+    background: #be29f3;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop37 {
+  0% {
+    background: #be29f3;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop37 {
+  0% {
+    background: #be29f3;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop37 {
+  0% {
+    background: #be29f3;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop38 {
+  0% {
+    background: #d879b9;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop38 {
+  0% {
+    background: #d879b9;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop38 {
+  0% {
+    background: #d879b9;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop38 {
+  0% {
+    background: #d879b9;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop39 {
+  0% {
+    background: #f40807;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop39 {
+  0% {
+    background: #f40807;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop39 {
+  0% {
+    background: #f40807;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop39 {
+  0% {
+    background: #f40807;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop40 {
+  0% {
+    background: #2fc83d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop40 {
+  0% {
+    background: #2fc83d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop40 {
+  0% {
+    background: #2fc83d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop40 {
+  0% {
+    background: #2fc83d;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop41 {
+  0% {
+    background: #7a8f20;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop41 {
+  0% {
+    background: #7a8f20;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop41 {
+  0% {
+    background: #7a8f20;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop41 {
+  0% {
+    background: #7a8f20;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop42 {
+  0% {
+    background: #5f5cbb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop42 {
+  0% {
+    background: #5f5cbb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop42 {
+  0% {
+    background: #5f5cbb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop42 {
+  0% {
+    background: #5f5cbb;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop43 {
+  0% {
+    background: #872d6f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop43 {
+  0% {
+    background: #872d6f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop43 {
+  0% {
+    background: #872d6f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop43 {
+  0% {
+    background: #872d6f;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop44 {
+  0% {
+    background: #7bb84c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop44 {
+  0% {
+    background: #7bb84c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop44 {
+  0% {
+    background: #7bb84c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop44 {
+  0% {
+    background: #7bb84c;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop45 {
+  0% {
+    background: #41509e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop45 {
+  0% {
+    background: #41509e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop45 {
+  0% {
+    background: #41509e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop45 {
+  0% {
+    background: #41509e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop46 {
+  0% {
+    background: #61a09e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop46 {
+  0% {
+    background: #61a09e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop46 {
+  0% {
+    background: #61a09e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop46 {
+  0% {
+    background: #61a09e;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop47 {
+  0% {
+    background: #f47a84;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop47 {
+  0% {
+    background: #f47a84;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop47 {
+  0% {
+    background: #f47a84;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop47 {
+  0% {
+    background: #f47a84;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop48 {
+  0% {
+    background: #806f61;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop48 {
+  0% {
+    background: #806f61;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop48 {
+  0% {
+    background: #806f61;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop48 {
+  0% {
+    background: #806f61;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop49 {
+  0% {
+    background: #fdeaf5;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop49 {
+  0% {
+    background: #fdeaf5;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop49 {
+  0% {
+    background: #fdeaf5;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop49 {
+  0% {
+    background: #fdeaf5;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes apop50 {
+  0% {
+    background: #b7f353;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes apop50 {
+  0% {
+    background: #b7f353;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes apop50 {
+  0% {
+    background: #b7f353;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes apop50 {
+  0% {
+    background: #b7f353;
+  }
+  10% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
