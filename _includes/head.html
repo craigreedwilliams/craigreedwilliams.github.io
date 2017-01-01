@@ -9,15 +9,13 @@
 
     <script type="text/javascript" src="instafeed.js"></script>
 
-    <script type="text/javascript">
+   <script type="text/javascript">
     var feed = new Instafeed({
-  get: 'user',
-  userId: 'reed8404',
-  filter: function(image) {
-    return image.tags.indexOf('#frenchbrittany') >= 0;
-  }
-});
-feed.run();
+        get: 'tagged',
+        tagName: 'frenchbrittany',
+        clientId: '	612910f282ff4cca898fa0ae8adead07'
+    });
+    feed.run();
 </script>
 
 <script>
