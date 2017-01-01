@@ -5,8 +5,18 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="instafeed.js"></script>
+
+    <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'frenchbrittany',
+        clientId: '612910f282ff4cca898fa0ae8adead07'
+    });
+    feed.run();
+</script>
 
 <script>
     $(function () {
