@@ -266,6 +266,14 @@ a:active {
   background-position: center center;
 }
 
+.imprint {
+  padding: 25vh 10%;
+  background-color:	#FF0000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
 /*DECORATION*/
 
