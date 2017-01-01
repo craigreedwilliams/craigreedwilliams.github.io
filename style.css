@@ -266,6 +266,14 @@ a:active {
   background-position: center center;
 }
 
+.documents {
+  padding: 25vh 10%;
+  background-color: 	#FFCC00;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .legal {
   padding: 25vh 10%;
   background-color:	#FF0000;

@@ -1,0 +1,112 @@
+<div id="documents"> </div>
+<div class="section documents">
+    <div class="grid">
+        <div class="col sixty">
+            <div class="module">
+                <h2> documents </h2>
+                <div class="line"> </div>
+                <p>
+                    <div class="cloudwok-embed" data-wokid="Pe6a">
+                        <div class="cloudwok-upload-files"></div>
+                        <form class="cloudwok-upload">
+                            <div class="cloudwok-dropzone"></div>
+                        </form>
+                        <div class="cloudwok-tos-checkbox"></div>
+
+                        <div class="cloudwok-upload-message"></div>
+
+                        <div class="cloudwok-download-files"></div>
+                    </div>
+                    <style>
+    .cloudwok-embed .dropzone {
+        background: #ffcc33 !important;
+        color: #ffffff !important;
+        border: solid 3px #ffffff !important;
+    }
+    .cloudwok-embed .dropzone .filepicker {
+        background: #ff0033 !important;
+        color: #ffffff !important;
+        border: solid 1px #ffffff !important;
+    }
+    .cloudwok-embed .btn-start-upload {
+        background: #ff0033 !important;
+        color: #ffffff !important;
+        border: solid 1px #ffffff !important;
+    }
+</style>
+<script>
+    var cloudWokConfig = {
+        "dropzone": {
+            "label": "",
+            "button": "ADD FILES"
+        },
+        "success": {
+            "message": {
+                "title": "UPLOAD SUCCESS TITLE",
+                "subtitle": "UPLOAD SUCCESS SUBTITLE",
+                "text": "UPLOAD SUCCESS TEXT",
+                "button": "OK",
+                "noButtonOwnCW": true,
+                "dontpopup": true,
+                "dontslideup": true,
+                "dontfadeout": true
+            },
+            "redirect": ""
+        },
+        "form": {
+            "email": {
+                "placeholder": "Email",
+                "optional": false
+            },
+            "name": {
+                "firstname": {
+                    "placeholder": "Frst name",
+                    "required": true
+                },
+                "lastname": {
+                    "placeholder": "Last name",
+                    "required": true
+                }
+            },
+            "message": {
+                "placeholder": "Decription",
+                "rows": 3,
+                "optional": false
+            },
+            "button": "UPLOAD &amp; SEND",
+            "sent": "UPLOADED &amp; SENT"
+        },
+        "terms": {
+            "show": true,
+            "popup": true,
+            "text": {
+                "before": "Before you upload...",
+                "agree": "Please agree to the following Terms of Service:",
+                "title": "Terms of Service",
+                "main": "Be cool."
+            },
+            "checkbox": {
+                "text1": "I agree with the ",
+                "text2": "Terms of Service",
+                "invalid": "Cannot start uploading. Please click on the checkbox first to agree with the Terms of Service."
+            }
+        }
+    };
+    document.querySelector(".cloudwok-embed").setAttribute("data-config",
+        JSON.stringify(cloudWokConfig));
+    (function (window, document) {
+        var loader = function () {
+            var script = document.createElement("script"),
+                tag = document.getElementsByTagName("script")[0];
+            script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+            tag.parentNode.insertBefore(script, tag);
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) :
+            window.attachEvent("onload", loader);
+    })(window, document);
+</script>
+</p>
+</div>
+</div>
+</div>
+</div>
