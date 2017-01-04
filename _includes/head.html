@@ -4,12 +4,12 @@
     <title> Craig Reed Williams </title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://use.fontawesome.com/2d2ac03d0d.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/galleria.min.js"></script>
-
+    
+<!--Animate-->
     <script>
         $(function () {
             $('a[href*=#]:not([href=#])').click(function () {
@@ -28,11 +28,15 @@
         });
     </script>
 
-<script>
-    (function () {
-        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/themes/classic/galleria.classic.min.js');
-        Galleria.run('.galleria');
-    } ());
-</script>
-
+<!--Display the images in the Gallery lightbox on click-->
+    <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = { index: link, event: event },
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+    </script>
 </head>
